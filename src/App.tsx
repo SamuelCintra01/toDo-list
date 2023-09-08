@@ -13,6 +13,11 @@ export function App() {
     {
       id: "teste",
       title: "Estudar",
+      isCompleted: true,
+    },
+    {
+      id: "teste2",
+      title: "Jogar",
       isCompleted: false,
     },
   ]);

@@ -7,16 +7,23 @@ interface Props {
 }
 
 export function Tasks({ tasks }: Props) {
+  const taskQuantity = tasks.length;
+  const completedTasks = tasks.filter(
+    (task) => task.isCompleted === true
+  ).length;
+
   return (
     <section className={styles.tasks}>
       <header>
         <div>
           <p>Tarefas criadas</p>
-          <span>10</span>
+          <span>{taskQuantity}</span>
         </div>
         <div>
           <p className={styles.textPurple}>Concluídas </p>
-          <span>2 de 10</span>
+          <span>
+            {completedTasks} de {taskQuantity}
+          </span>
         </div>
       </header>
 
