@@ -51,17 +51,9 @@ header span {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-}
-
-.empty svg {
-  color: var(--gray-400);
+  opacity: 0.4;
 }
 
 .empty p {
-  color: var(--gray-200);
   margin-bottom: 0.3rem;
-}
-
-.empty span {
-  color: var(--gray-400);
 }
